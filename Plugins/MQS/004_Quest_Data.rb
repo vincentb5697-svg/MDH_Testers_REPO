@@ -865,6 +865,18 @@ Quest13 = {
     :RewardString => "Captain Stern’s gratitude and a rare mechanical part!"
 	
    }
+   
+   DawnChateau = {
+    :ID => "77",
+    :Name => "Ghost with a Grudge!",
+    :QuestGiver => "Dawn?",
+    :Stage1 => "Investigate the haunted manor",
+	:Stage2 => "Check on Dawn",
+    :Location1 => "Trackless Forest",
+	:Location2 => "Dawn's house",
+    :QuestDescription => "The power that fused Dawn and Ceruledge is calling them back, weakening their body. Investigate the manor in Trackless Forest and defeat the presence threatening them!",
+    :RewardString => "Free Dawn and Ceruledge from the manor's influence!"
+}
   #======================================================#
   #                                                      #
   #                      "Official"                      #

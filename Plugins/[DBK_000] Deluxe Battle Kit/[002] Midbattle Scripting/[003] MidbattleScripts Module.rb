@@ -1724,7 +1724,7 @@ DANCERFLYGON_MIDBATTLE = {
 	"battlerForm"   => [1],
 	"playSE"        => "Anim/Sound2"
   },
-"RoundEnd_3_foe" => {
+"RoundEnd_4_foe" => {
   "setBattler" => :Self,
   "battlerForm" => [1],
   "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
@@ -1734,38 +1734,18 @@ DANCERFLYGON_MIDBATTLE = {
   "addVariable" => 1,
   "playSE" => "Anim/Heal"
 },
-"RoundEnd_6_foe" => {
+"RoundEnd_8_foe" => {
   "setBattler" => :Self,
   "battlerForm" => [2],
   "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
   "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
   "changeWeather" => :Sandstorm,
   "text" => ["{1}'s dancing seems to be more spiritual!"],
-  "addVariable" => 1,
-  "playSE" => "Anim/Heal"
-},
-"RoundEnd_9_foe" => {
-  "setBattler" => :Self,
-  "battlerForm" => [1],
-  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
-  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
-  "changeWeather" => :Sandstorm,
-  "text" => ["{1}'s dancing seems to be more physical!"],
   "addVariable" => 1,
   "playSE" => "Anim/Heal"
 },
 "RoundEnd_12_foe" => {
   "setBattler" => :Self,
-  "battlerForm" => [2],
-  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
-  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
-  "changeWeather" => :Sandstorm,
-  "text" => ["{1}'s dancing seems to be more spiritual!"],
-  "addVariable" => 1,
-  "playSE" => "Anim/Heal"
-},
-"RoundEnd_15_foe" => {
-  "setBattler" => :Self,
   "battlerForm" => [1],
   "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
   "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
@@ -1774,7 +1754,7 @@ DANCERFLYGON_MIDBATTLE = {
   "addVariable" => 1,
   "playSE" => "Anim/Heal"
 },
-"RoundEnd_18_foe" => {
+"RoundEnd_16_foe" => {
   "setBattler" => :Self,
   "battlerForm" => [2],
   "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
@@ -1784,7 +1764,7 @@ DANCERFLYGON_MIDBATTLE = {
   "addVariable" => 1,
   "playSE" => "Anim/Heal"
 },
-"RoundEnd_21_foe" => {
+"RoundEnd_20_foe" => {
   "setBattler" => :Self,
   "battlerForm" => [1],
   "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
@@ -1795,6 +1775,26 @@ DANCERFLYGON_MIDBATTLE = {
   "playSE" => "Anim/Heal"
 },
 "RoundEnd_24_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [2],
+  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more spiritual!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_28_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [1],
+  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more physical!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_32_foe" => {
   "setBattler" => :Self,
   "battlerForm" => [2],
   "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
@@ -1948,7 +1948,7 @@ PDAWN_MIDBATTLE = {
 	"setBattler" => :Opposing,
 	"teamEffects" => [:Spikes, 3, "Dawn scatters vicious spikes across the field!"]
  },
- "RoundEnd_foe_repeat_every_3" => {
+ "RoundEnd_foe_repeat_every_6" => {
     "setBattler" => :Opposing,
 	"battlerAbility" => :NORMALIZE,
     "addVariable" => 1,
@@ -2123,6 +2123,7 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
   },
 "RoundEnd_foe_repeat_every_2" => {
    "addVariable" => 1,
+   "setBattler"   => :Opposing,
    "battlerStats" => [:DEFENSE, -1]
   },
  "BattlerReachedHPCap_foe" => {
@@ -2138,7 +2139,7 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
     "text" => [:Opposing, "{1} unleashes a crippling howl!"],
     "battlerStatus" => [:BURN, true]
   },
-  "BattlerHPHalf_foe" => {
+  "TargetHPLow_foe" => {
     "megaEvolve" => "It seems that her most Primal instints have awaken!",
 	"battlerStats" => [:ATTACK, 1, :SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
 	"battlerMoves" => [:FLAREBLITZ, :WICKEDBLOW, :DYNAMICPUNCH, :YAWN],
@@ -2149,15 +2150,6 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "addVariable" => 1,
 	"text" => ["{1} is excited for new prey!"]
-  },
-  "VariableUp_repeat_every_5" => {
-    "ignoreUntil" => "BattlerReachedHPCap_foe",
-	"battlerMoves" => [:DESTRUCTIONINTHREESTRIKES,nil,nil,nil],
-	"battlerStats" => [:SPECIAL_DEFENSE, -1, :DEFENSE, -1]
-  },
-	"AfterMove_DESTRUCTIONINTHREESTRIKES_repeat" => {
-    "battlerMoves" => [:FLAREBLITZ, :WICKEDBLOW, :DYNAMICPUNCH, :YAWN],
-	"setVariable" => 0
   }
 }
 
@@ -2418,6 +2410,7 @@ LEAFEON_BOSS = {
 ABOMINACEON_INTRO_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable"   => 0,
+	"battlerHPCap" => 50,
 	"changeBGM" => "ULT_BattleLegendary",
     "setChoices"    => [:Gen1, nil, {
       "Fire Core"   => "You take aim for the Fire Core!",
@@ -2453,6 +2446,11 @@ ABOMINACEON_INTRO_MIDBATTLE = {
     "setBattler" => :Opposing,
 	"battlerHP" => -8,
 	"text" => ["{1} sees you're lack of aggression as an opening!"]
+  },
+    "BattlerReachedHPCap_foe" => {
+    "speech"    => ["She tosses Wally at you and heads inside"],
+    "endSpeech" => true,
+    "endBattle" => 1
   }
 }
 
